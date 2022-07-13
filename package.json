@@ -1,11 +1,19 @@
 {
   "name": "@launchnotes/moments-api-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "api.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "author": "Alvin Huynh <alvin@launchnotes.io> (https://launchnotes.com)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.0.4",
+    "@types/request": "^2.48.8"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
