@@ -1,6 +1,6 @@
 {
   "name": "@launchnotes/moments-api-client",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "dist/api.js",
   "files": [
