@@ -15,12 +15,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
+      - run: yarn
+      - run: yarn build --verbose
       - uses: actions/upload-artifact@v3
         with:
           name: dist
           path: dist/
-      - run: yarn
-      - run: yarn build --verbose
 
   npm-publish:
     needs: build
