@@ -1,7 +1,7 @@
 {
   "name": "@launchnotes/moments-api-client",
   "version": "1.1.0",
-  "description": "",
+  "description": "Client that allows you to interface with the Moments API.",
   "main": "dist/api.js",
   "files": [
     "dist/",
@@ -14,6 +14,10 @@
   },
   "author": "Alvin Huynh <alvin@launchnotes.io> (https://launchnotes.com)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/launchnotes/moments-api-client.git"
+  },
   "devDependencies": {},
   "dependencies": {
     "axios": "^0.27.2",
