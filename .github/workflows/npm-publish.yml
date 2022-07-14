@@ -39,7 +39,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - uses: actions/download-artifact@v3
       - name: Display tree of directory
-        runs: tree -a
+        run: tree -a
       - run: npm publish --dry-run
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
@@ -58,7 +58,7 @@ jobs:
         with:
           name: dist
       - name: Display tree of directory
-        runs: tree -a
+        run: tree -a
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
