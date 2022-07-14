@@ -42,6 +42,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: dist
+          path: dist/
       - name: Display tree of directory
         run: tree
       - name: Publish dry run
