@@ -29,17 +29,24 @@ a `MomentsApi` instance with that config.
 From there, you should be able to make POST requests to the Moments API using `MomentsApi.postMoments()`.
 
 ```ts
-import { MomentsApi } from '@launchnotes/moments-api-client';
+import {
+  MomentsApi,
+  PostMomentsRequest,
+} from '@launchnotes/moments-api-client';
 import { Configuration } from '@launchnotes/moments-api-client/dist';
 
-const config = new Configuration({ apiKey: 'moments_api_abc123' })
+const config = new Configuration({
+  accessToken: 'manage_abc123',
+  basePath: 'https://pathtoapi.local:8080',
+})
 const api = new MomentsApi(config);
-
-const response = api.postMoments({
-  schemaId: 'test.json',
-  projectId: 'proj_abc123',
+const request: PostMomentsRequest = {
+  schemaId: 'https://schema.launchnotes.dev/schemas/test.json',
+  projectId: 'pro_abc123',
   data: {},
-}).then((result) => {
+};
+
+const response = api.postMoments(request).then((result) => {
   console.log(result);
 }).catch((error) => {
   console.log(error);
