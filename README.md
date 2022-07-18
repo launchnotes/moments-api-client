@@ -32,8 +32,8 @@ From there, you should be able to make POST requests to the Moments API using `M
 import {
   MomentsApi,
   PostMomentsRequest,
+  Configuration,
 } from '@launchnotes/moments-api-client';
-import { Configuration } from '@launchnotes/moments-api-client/dist';
 
 const config = new Configuration({
   accessToken: 'manage_abc123',
