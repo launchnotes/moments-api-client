@@ -10,7 +10,7 @@
   "scripts": {
     "build": "tsc --build",
     "clean": "tsc --build --clean",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Alvin Huynh <alvin@launchnotes.io> (https://launchnotes.com)",
   "license": "MIT",
@@ -18,7 +18,12 @@
     "type": "git",
     "url": "https://github.com/launchnotes/moments-api-client.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "axios-mock-adapter": "^1.21.1",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.7"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "typescript": "^4.7.4"
