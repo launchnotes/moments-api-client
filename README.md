@@ -5,6 +5,7 @@ Client that allows you to interface with LaunchNotes' Moments API.
 - [Moments API Client](#moments-api-client)
   - [Installing the client](#installing-the-client)
   - [Using the client to create Moments](#using-the-client-to-create-moments)
+  - [Testing the client](#testing-the-client)
   - [OpenAPI generator and Axios](#openapi-generator-and-axios)
 
 ## Installing the client
@@ -53,6 +54,11 @@ const response = api.postMoments(request).then((result) => {
 });
 
 ```
+
+## Testing the client
+
+The client is tested using `jest` and are located in the `test` directory. You
+can run these tests by doing `yarn test`.
 
 ## OpenAPI generator and Axios
 
