@@ -78,7 +78,6 @@ it('should not be able to post moment', async () => {
 
   const thenFn = jest.fn();
   const catchFn = jest.fn((error) => {
-    console.log(error);
     expect(error.response.data).toStrictEqual(response);
   });
 
